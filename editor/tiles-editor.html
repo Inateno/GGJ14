@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Tiles Editor</title>
+    <link href="style-tileseditor.css" rel="stylesheet" type="text/css" />
+  </head>
+    <body>
+        <div id="render"></div>
+        <div id="render2"></div>
+        
+        <div id="t_textarea">
+          <br />
+          <textarea id="load_textarea" style="width:80%" rows="10"></textarea>
+          <br />
+          <button id="t_ok">OK</button>
+          <button id="t_loadjson">Load JSON</button>
+        </div>
+        
+        <div id="tools">
+          <h4>Tools</h4>
+          <button id="getjson">Get JSON</button>
+          <br />
+          <button id="loadjson">Load JSON</button>
+        </div>
+        
+        <div id="elGui" style="display:block;height:auto;">
+          <h4>Objet courant</h4>
+          <div>
+            <label for="el_name">nom (caract&eacute;res standards et _):</label>
+            <input id="el_name" type="text" name="name" value="name" style="width:110px;" />
+          </div>
+          <br />
+          <div>
+            <label for="el_tag">tag (steps,bounce,flow,slow<br />,ou none):</label>
+            <input id="el_tag" type="text" name="tag" value="none" style="width:110px;"/>
+          </div>
+          <br />
+          <div>
+            <label for="el_sx">source-x:</label>
+            <input id="el_sx" type="text" name="x" value="0" />
+          </div>
+          
+          <div>
+            <label for="el_sy">source-y:</label>
+            <input id="el_sy" type="text" name="y" value="0" />
+          </div>
+          
+          <div>
+            <label for="el_tw">tile-w:</label>
+            <input id="el_tw" type="text" name="x" value="0" />
+          </div>
+          
+          <div>
+            <label for="el_th">tile-h:</label>
+            <input id="el_th" type="text" name="y" value="0" />
+          </div>
+          
+          <div>
+            <label for="el_w">final-w(optional):</label>
+            <input id="el_w" type="text" name="x" value="0" />
+          </div>
+          
+          <div>
+            <label for="el_h">final-h(optional):</label>
+            <input id="el_h" type="text" name="y" value="0" />
+          </div>
+          
+          <div>
+            <label for="el_zindex">z-Index(optional):</label>
+            <input id="el_zindex" type="text" name="zindex" value="0"/>
+          </div>
+          
+          <div>
+            <label for="collider">
+              <input type="checkbox" id="collider" />Collider ?
+            </label>
+          </div>
+          
+          <div id="collider_box" style="display:">
+            <select id="select_collider">
+              <option value="box">Box Collider</option>
+              <option value="circle">Circle Collider</option>
+            </select>
+            
+            <div id="box_collider_box">
+              <div>
+                <label for="col_w">Width:</label>
+                <input type="text" id="col_w"/>
+              </div>
+              <div>
+                <label for="col_h">Height:</label>
+                <input type="text" id="col_h"/>
+              </div>
+            </div>
+            <div id="circle_collider_box" style="display:none">
+              <label for="col_radius">Radius:<label>
+              <input type="text" id="col_radius"/>
+            </div>
+            
+            <div>
+              <label for="col_l">Offset-Left:</label>
+              <input type="text" id="col_l"/>
+            </div>
+            <div>
+              <label for="col_t">Offset-Top:</label>
+              <input type="text" id="col_t"/>
+            </div>
+          </div>
+          <br />
+          <button id="el_ok">OK</button> - <button id="el_cancel">Cancel</button>
+        </div>
+        
+        <div id="tilesets">
+        </div>
+        
+    <script type="text/javascript" src="js/ext_libs/require.js" data-main="js/tiles-editor/main"></script>
+    </body>
+</html>

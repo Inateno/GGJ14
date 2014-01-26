@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+  margin      : 0px;
+  color      : white;
+}
+
+canvas {
+  /*position    : absolute;*/
+  left        : 10px;
+  bottom      : 10px;
+  border      : 1px dotted white;
+}
+#render, #render2
+{
+  margin-left : 240px;
+}
+
+#tools, #elGui, #tilesets, #t_textarea {
+  padding         : 10px;
+  border-radius   : 10px;
+  background-color: rgba( 100, 100, 100, 0.7 );
+  overflow        : auto;
+  padding-top     : 2px;
+  padding-bottom  : 2px;
+}
+
+#tools {
+  position: fixed;
+  left    : 0;
+  top     : 0;
+  width   : 200px;
+  height  : 200px;
+}
+
+#elGui {
+  display : none;
+  position: fixed;
+  left    : 0;
+  top     : 250px;
+  width   : 170px;
+  height  : 240px;
+}
+
+#tilesets {
+  position      : fixed;
+  top           : 0;
+  right         : 10px;
+  width         : 200px;
+  height        : 100%;
+  overflow-x    : hidden;
+}
+
+#t_textarea {
+  position   : fixed;
+  left       : 50%;
+  top        : 100px;
+  height     : 250px;
+  width      : 700px;
+  margin-left: -350px;
+}
+
+input[type="text"]
+{
+  width: 50px;
+  position: absolute;
+  right: 0;
+}
